@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda do Fernando</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>Agenda do Fernando</h1>
+            <form id="limpar_Inputs" >
+                <div class="card">
+                    
+                        <div class="lineInput">
+                            <label>Tarefa</label>
+                            <input type="text" id="tarefa" placeholder="Nome da tarefa">
+                            <div class="message-error" id="error-tarefa"></div> 
+                        </div>
+                        <br>
+                        <div class="lineInput">
+                            <label>Data da tarefa:</label>
+                            <input type="date" id="data" placeholder="Digite a data da tarefa">
+                            <div class="message-error" id="error-data"></div>
+                        </div>
+                        <br>
+                        <div class="lineInput">
+                            <label>
+                                <input type="radio" name="opcao" id="opcao_sim" value="Sim">
+                                Sim
+                            </label>
+                           
+
+                            <label>
+                                <input type="radio" name="opcao" id="opcao_nao" value="Não">
+                                Não
+                            </label>
+                                                      
+
+
+                        </div>
+                         <div class="message-error" id="error-opcao"></div>
+                        <br>
+
+                        <div class="buttons">
+                            <button type="submit" id="salvar">Salvar</button>
+                            <button type="button"  id="cancelar">Cancelar</button>
+                        </div>
+                        <br>
+
+                        <div class="sucesso" id="sucesso"></div>
+                    
+                </div>
+            </form>
+
+        <div>
+            <table>
+               
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarefa:</th>
+                            <th>Data da tarefa: </th>
+                            <th>Concluída:</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                
+                <tbody id="tbody">
+                    <!-- os dados da tabela serão adicionados dinamicamente com JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
