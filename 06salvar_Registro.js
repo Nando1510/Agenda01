@@ -68,6 +68,6 @@ async function salvar_Registro(event){
 
     }
 
-    location.reload();
+    //location.reload();
 
 }
