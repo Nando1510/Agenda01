@@ -42,10 +42,7 @@ async function salvarEdicao(id) {
                   document.getElementById('sucesso').textContent = '';
               }, 3000);
 
-          // Atualiza o registro na agenda
-          const index = agenda.findIndex(item => item.id === id);
-          agenda[index] = { id, tarefa, data, opcao };
-
+          
           // Atualiza a tabela
           carregarDados();
 
