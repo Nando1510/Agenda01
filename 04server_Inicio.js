@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 //const bcrypt = require('bcrypt');
-const nome_colecao_promeira_letra_Maiuscula = require('./models/nome_colecao_promeira_letra_Maiuscula');
+const nome_colecao_primeira_letra_Maiuscula = require('./models/nome_colecao_primeira_letra_Maiuscula');
 const app = express(); 
 
 app.use(express.json());
