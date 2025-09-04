@@ -38,6 +38,7 @@ async function salvarEdicao(id) {
           // Exibe mensagem de sucesso
           document.getElementById('sucesso').textContent = 'Dados atualizados com sucesso!!!';
 
+          // Esconde a mensagem de sucesso após 3 segundos
           setTimeout(() => {
                   document.getElementById('sucesso').textContent = '';
               }, 3000);
@@ -49,7 +50,7 @@ async function salvarEdicao(id) {
           // Limpa inputs
           limpar();
 
-          // Esconde a mensagem de sucesso após 3 segundos
+          
          
     }  
 
