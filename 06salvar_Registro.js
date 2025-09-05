@@ -33,15 +33,12 @@ async function salvar_Registro(event){
 
     if (validar){       
 
-        document.getElementById('sucesso').textContent = 'Dados cadastrados com sucesso!!!';
+        document.getElementById('sucesso').textContent = 'Dados cadastrados com sucesso!!!';       
        
-        carregarDados();
       
         setTimeout(() => {
             document.getElementById('sucesso').textContent = '';
         }, 3000);
-
-
         
 
          try {
@@ -67,6 +64,8 @@ async function salvar_Registro(event){
         }
 
     }
+
+     carregarDados();
 
     //location.reload();
 
